@@ -24,6 +24,7 @@ describe "Sign in", type: :request do
         expect(response.status).to eq 200
         expect(response.headers["access-token"]).to be
         expect(response.headers["token-type"]).to eq "Bearer"
+        expect(response.body).to eq "{\"data\":\"{\\\"id\\\":1,\\\"email\\\":\\\"foo@bar.com\\\"}\"}"
       end
     end
 
@@ -38,6 +39,7 @@ describe "Sign in", type: :request do
         expect(response.status).to eq 200
         expect(response.headers["access-token"]).to be
         expect(response.headers["token-type"]).to eq "Bearer"
+        expect(response.body).to eq "{\"data\":\"{\\\"id\\\":1,\\\"email\\\":\\\"foo@bar.com\\\"}\"}"
       end
     end
   end

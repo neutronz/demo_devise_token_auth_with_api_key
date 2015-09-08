@@ -12,6 +12,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'devise_token_auth', git: 'https://github.com/neutronz/devise_token_auth.git'
 
+gem 'active_model_serializers'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'spring'
