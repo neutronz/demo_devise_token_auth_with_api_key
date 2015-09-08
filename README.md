@@ -3,6 +3,7 @@ Proof of concept for authentication using
 
 1. email/password
 2. api token
+3. override ActiveModelSerializer for the user model
 
 There's no one signle gem that handles both email/password and api token authentication at the same time. We've chosen to use and extend: ``devise_token_auth``
 
