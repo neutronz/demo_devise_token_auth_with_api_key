@@ -10,7 +10,7 @@ gem 'sqlite3'
 
 gem 'devise'
 gem 'omniauth'
-gem 'devise_token_auth', git: 'https://github.com/neutronz/devise_token_auth.git'
+gem 'devise_token_auth'
 
 gem 'active_model_serializers'
 
